@@ -28,10 +28,10 @@ while guess != computer_number:
             print("Wrong!", end=" ")
 
             if guess < computer_number:
-                print("Try guessing a little higher.")
+                print("Try guessing higher.")
 
             else:
-                print("Try guessing a little lower.")
+                print("Try guessing lower.")
 
     else:
         print("Please input a number!")
