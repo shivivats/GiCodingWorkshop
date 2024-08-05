@@ -1,6 +1,6 @@
 def fleeText():
   print("Scared from the growls coming from the cave, you fled back on the path through the woods, where Silas and Brangar await you.")
-  print("You can already imagine their disappointed faces as you'll share this news with them.")
+  print("You can already imagine their disappointed faces when you'll share this news with them.")
   print("The end.")
 
 
