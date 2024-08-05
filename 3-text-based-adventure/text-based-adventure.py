@@ -19,6 +19,8 @@ player_name = input("> ")
 
 # Print a welcome message
 print("Welcome to Cragmaw Hideout, " + player_name + ".....")
+
+# Cave Mouth
 print("Following a forest trail, you come across a large cave in a hillside.")
 print("A shallow stream flows out of the cave mouth, which is screened by dense shrubs.")
 print("A narrow dry path leads into the cave on the right-hand side of the stream.")
@@ -28,7 +30,7 @@ print("Would you like to go towards the cave or flee?")
 entrance_choice = input("> ")
 
 # Do something based on the user's input
-if(entrance_choice == "go towards the cave"): # or entrance_choice == "go towards"
+if entrance_choice == "go towards the cave": # or entrance_choice == "go towards"
   print("As you approach the cave, you notice a small area in the shrubs on the east side of the stream has been hollowed out to form a lookout.")
   print("Wooden planks flatten out the shrubs and provide room for guards to lie hidden and watch the area—including a pair of goblins lurking there right now!")
   print("Would you like to go into the cave, try to ambush the goblins, or flee?")
@@ -39,9 +41,9 @@ if(entrance_choice == "go towards the cave"): # or entrance_choice == "go toward
   # print("What would you like to do?")
 
   thicket_choice = input("> ")
-  if(thicket_choice == "go into the cave"):
+  if thicket_choice == "go into the cave":
     # stealthRoll = random.randint(1, 20)
-    # if(stealthRoll > 10):
+    # if stealthRoll > 10):
     #   print("You sneak into the cave mouth without the goblins noticing you.")
     # else:
     #   print("The goblins spot you, you are dead.")
@@ -49,14 +51,14 @@ if(entrance_choice == "go towards the cave"): # or entrance_choice == "go toward
     print("One of them finds its mark, you are dead.")
     print("The end.")
 
-  elif(thicket_choice == "ambush the goblins"):
+  elif thicket_choice == "ambush the goblins":
     print("You sneak around the goblins and quickly shoot two arrows at them.")
     print("Unaware of your presence, they have no time to react and are quickly felled.")
 
     print("Would you like to go into the cave?")
     cave_choice = input("> ")
 
-    if(cave_choice == "yes"): # or cave_choice == "go into the cave"
+    if cave_choice == "yes": # or cave_choice == "go into the cave"
       print("Just inside the cave mouth, a few uneven stone steps lead up to a small, dank chamber on the east side of the passage.")
       print("The cave narrows to a steep fissure at the far end, and is filled with the stench of animals.")
       print("Savage snarls and the sounds of rattling chains greet your ears where three wolves are chained up just inside the opening.")
@@ -67,16 +69,16 @@ if(entrance_choice == "go towards the cave"): # or entrance_choice == "go toward
       print("What would you like to do?")
 
       gundren_choice = input("> ")
-      if(gundren_choice == "walk around the wolves"): # or cave_choice == "walk around"
+      if gundren_choice == "walk around the wolves": # or cave_choice == "walk around"
         print("You successfully walk around the wolves and manage to free Gundren.")
         winText()
 
-      elif(gundren_choice == "distract the wolves with food"): # or cave_choice == "distract" or cave_choice = "distract with food"
+      elif gundren_choice == "distract the wolves with food": # or cave_choice == "distract" or cave_choice = "distract with food"
         print("You throw some of your rations at the wolves. The seemingly starved animals quickly leap to grab and begin to devour it.")
         print("You use this distraction and quickly make your way to Gundren, freeing him.")
         winText()
 
-      elif(gundren_choice == "flee"):
+      elif gundren_choice == "flee":
         fleeText()
 
       else:
@@ -88,7 +90,7 @@ if(entrance_choice == "go towards the cave"): # or entrance_choice == "go toward
   else:
     fleeText()
 
-elif(entrance_choice == "flee"):
+elif entrance_choice == "flee":
   fleeText()
 
 else:
