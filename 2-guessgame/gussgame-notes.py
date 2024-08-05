@@ -1,7 +1,7 @@
 # ---- The most basic version of the program ----
 import random
 
-number = random.randint(1, 10)
+computer_number = random.randint(1, 10)
 
 print("I'm thinking of a number between 1 and 10.")
 
@@ -17,7 +17,7 @@ while True: # means the game runs forever (until we break it ourselves)
     #     DO THIS
     # else:
     #     DO THAT
-    if guess == number: 
+    if guess == computer_number: 
         print("Correct! You win!")
         break
     else:
@@ -26,7 +26,7 @@ while True: # means the game runs forever (until we break it ourselves)
 # -------------------------------------------------------
 # The first thing we're gonna do is.. cheat
 
-print("Computer's thinking of the number " + str(number))
+print("Computer's thinking of the number " + str(computer_number))
 
 # This will help us test our game faster!
 
@@ -45,7 +45,7 @@ print("Computer's thinking of the number " + str(number))
 
 lower=1
 upper=10
-number=random.randint(lower, upper)
+computer_number=random.randint(lower, upper)
 
 print("I'm thinking of a number between " + str(lower) + " and " + str(upper) + ".")
 
@@ -56,11 +56,11 @@ print("I'm thinking of a number between " + str(lower) + " and " + str(upper) + 
 # We can try to add a way to tell the player if they guessed higher or lower than the computer's number to nudge them in the right direction
 
 # at the end of the while loop
-if guess < number:
-    print("Try guessing a little higher.")
+if guess < computer_number:
+    print("Try guessing higher.")
 
 else:
-    print("Try guessing a little lower.")
+    print("Try guessing lower.")
 
 
 # ------------------------------------------------------
@@ -69,11 +69,13 @@ else:
 
 # after guess = input()
 
-if not guess.isdigit():
-    print("Please input in a number!")
-    continue
+if guess.isdigit():
+    # guess = int(guess)
 
-# guess = int(guess)
+# ...
+    else:
+        print("Please input a number!")
+
 
 # We can also add make sure some of our print statements don't go to the new line, just for better reading
 
@@ -81,6 +83,15 @@ print("Guess the number: ", end ="")
 
 print("Wrong!", end=" ")
 
+
+# ------------------------------------------------------
+# We can make our loop smarter
+
+guess = 0
+
+while guess != computer_number:
+
+# --> remove the break
 
 # ------------------------------------------------------
 # We can also tell the player to stay in range if they input something out of range
