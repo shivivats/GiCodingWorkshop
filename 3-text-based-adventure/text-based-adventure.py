@@ -1,3 +1,12 @@
+# TODO:
+# make the invalid choice into a function too
+# make the invalid choice more consistent
+# make the game start again after an invalid choice
+# make each "room" into a class and use functions to show the text
+# ask the user for their name at the beginning and display that name
+# add the "short versions" of the prompts to the if statements as well so we have other options for the user
+
+
 def fleeText():
   print("Scared from the growls coming from the cave, you fled back on the path through the woods, where Silas and Brangar await you.")
   print("You can already imagine their disappointed faces when you'll share this news with them.")
@@ -97,10 +106,3 @@ else:
   print("Invalid choice!.")
 
 
-# TODO:
-# make the invalid choice into a function too
-# make the invalid choice more consistent
-# make the game start again after an invalid choice
-# make each "room" into a class and use functions to show the text
-# ask the user for their name at the beginning and display that name
-# add the "short versions" of the prompts to the if statements as well so we have other options for the user
